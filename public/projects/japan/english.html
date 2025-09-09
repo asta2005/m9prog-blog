@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NXT Museum</title>
+    <style>
+        .mainNavigation {
+            display: none;
+        }
+
+        .mainNavigation.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body id="js--body">
+    <header class="header">
+        <h1 class="headerTitle"><a href="">japan</a></h1>
+        <button id="js--menu" class="headerButton" onclick="toggleMenu()">Menu</button>
+    </header>
+    <nav id="js--nav" class="mainNavigation">
+        <ul class="mainNavigationList">
+            <li class="mainNavigationListItem">
+                <a href="">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <article class="container">
+        <img class="mainImage" src="img/logo.png" alt="">
+        <section class="text-block">
+            <h2>why you should go to japan</h2>
+            <p>Embark on a journey to Japan, a captivating fusion of ancient tradition and cutting-edge innovation.
+                 Immerse yourself in the beauty of cherry blossoms, explore futuristic cities like Tokyo, indulge in world-renowned cuisine,
+                  and experience the warmth of Japanese hospitality. From serene landscapes to bustling urban centers, Japan offers a unique and enriching adventure,
+                 promising a seamless blend of cultural richness, technological marvels, and unforgettable moments.
+                
+            </p>
+        </section>
+    </article>
+    <section class="images">
+        <img src="img/mus10.jpg" alt="" class="image image__1">
+        <img src="img/mus9.jpg" alt="" class="image image__2">
+        <img src="img/mus7.jpg" alt="" class="image image__3">
+    </section>
+    <section class="textBlocksContainer">
+        <article class="textBlocks">
+            <h2>Geschiedenis</h2>
+            <p>
+                Nxt Museum, opgericht door de jonge ondernemer Merel van Helsdingen, exposeert grootschalige kunstinstallaties,
+                 die worden ontwikkeld vanuit interdisciplinaire samenwerkingen tussen gevestigde en opkomende kunstenaars, ontwerpers, technici, muzikanten en wetenschappers.
+
+            </p>
+        </article>
+        <article class="textBlocks">
+            <h2>onze doel</h2>
+            <p>Het is onze missie om nieuwe en volgende iteraties van creatieve expressie mogelijk te maken.
+                 Alles wat we doen, willen en vrezen heeft rechtstreeks betrekking op de toekomst.
+                  Het is een van de meest fascinerende concepten voor de menselijke geest. Een spannende inspiratiebron die eindeloze vragen oproept.
+                   Tegenwoordig zijn deze vragen belangrijker en complexer dan ooit.
+                 Wat is het volgende? We weten het niet, maar we zijn eindeloos nieuwsgierig om samen op ontdekking te gaan.
+                
+            </p>
+        </article>
+    </section>
+    <article class="textBlocks">
+        <h2>Rewiews</h2>
+        <p>We hebben echt genoten van ons bezoek. Het was een erg natte dag en het kostte ons een tijdje om hierheen te lopen,
+             maar we zijn de reis zeker waard. We lieten onze jassen achter in de gratis garderobe en brachten een paar uur door met het onderdompelen in de activiteiten van de NXT museum met behulp van de gratis spreekgids.
+              We hielden erg van de aanpak van het museum om feiten te delen,
+              maar ook om het publiek uit te nodigen om na te denken en standpunten en consensus ter discussie te stellen. We waren verslaafd aan de introboodschap waarin het concept werd uitgelegd.
+               Veel details en activiteiten door de eeuwen heen - uitstekend. Het laatste moderne gedeelte vonden we niet echt leuk - maar dat is onze smaak en geen kritiek - vorm je eigen mening.
+             Al het personeel met wie we in aanraking kwamen was erg vriendelijk en blij om te helpen - geweldige locatie en zou het aanbevelen.</p>
+    </article>
+    <article>
+        <section>
+            <article class= "textBlocks">
+                <h2>Rewiew</h2>
+                <p>het was een klein museum en had een mooie geschiedenis, maar je wilde meer.
+                     Het leek erop dat er nog veel meer geschiedenis over Amsterdam te vertellen was.
+                     Ik hou van geschiedenis en helaas kon dit museum mijn interesse helemaal niet wekken.</p>
+            </article>
+        </section>
+    </article>
+    <footer class="footer">
+        <address class="footer__addres">
+            <h3>Adres:</h3>
+            Asterweg 22
+          1031HP Amsterdam
+            Nederland
+            </address>
+        <section class="openingstijden">
+            <h4 class="openingstijden__h4">Openingstijden</h4>
+            <p class="openingstijden__dagen">Maandag: 10:30-20:30 uur</p>
+            <p class="openingstijden__dagen">Dinsdag: 10:30-20:30 uur </p>
+            <p class="openingstijden__dagen">Woensdag: 11:00-21:30 uur</p>
+            <p class="openingstijden__dagen">Donderdag: 10:30-22:30 uur</p>
+            <p class="openingstijden__dagen">Vrijdag: 10:30-22:30 uur</p>
+            <p class="openingstijden__dagen">Zaterdag: 10:30-22:30 uur</p>
+            <p class="openingstijden__dagen">Zondag: 10:30-20:30 uur</p>
+        </section>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById('js--nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

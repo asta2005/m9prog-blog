@@ -16,7 +16,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
   <header class="navbar">
-    <div class="logo">⚡ Portfolio</div>
+    <div class="logo">⚡ Omar kahouach </div>
     <nav>
       <ul>
         <li><a href="index.php" class="active">Home</a></li>
