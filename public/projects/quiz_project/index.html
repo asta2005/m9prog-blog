@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Klimaatquiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="start-screen" class="screen">
+    <img src="images/Foreground_Chantal.png" id="start-bg" class="bg">
+    <div class="center-box">
+      <h1>Welkom bij de quiz over klimaat en duurzaamheid</h1>
+      <button onclick="goToIntro()">Volgende</button>
+    </div>
+  </div>
+
+  <div id="intro-screen" class="screen" style="display: none;">
+    <img src="images/Foreground_Burgemeester.png" id="intro-bg" class="bg">
+    <div class="center-box">
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+  </div>
+
+  <div id="quiz-container" style="display: none;">
+    <img id="background" src="images/water0.png" />
+    <div id="question-box">
+      <h1 id="question">Vraag komt hier</h1>
+    </div>
+    <div id="answers">
+      <button onclick="answer('L')">JA</button>
+      <button onclick="answer('R')">NEE</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

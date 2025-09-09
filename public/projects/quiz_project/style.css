@@ -1,0 +1,116 @@
+/* Hele pagina goed centreren */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Achtergrondafbeelding quiz */
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Vraag in het midden van het scherm */
+#question-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 90%;
+}
+
+#question-box h1 {
+  font-size: 2em;
+  color: #002244;
+  margin: 0;
+}
+
+/* JA/NEE buttons rechts op het scherm, onder elkaar */
+#answers {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 2;
+}
+
+#answers button {
+  width: 180px;
+  padding: 15px;
+  font-size: 1.4em;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffcc00;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+  transition: background 0.2s ease-in-out;
+  text-align: center;
+}
+
+#answers button:hover {
+  background-color: #ffaa00;
+}
+
+/* Start en intro scherm centreren */
+.center-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.75);
+  padding: 30px 40px;
+  border-radius: 20px;
+  z-index: 1;
+  text-align: center;
+}
+
+.center-box h1 {
+  font-size: 2em;
+  color: #002244;
+  margin-bottom: 20px;
+}
+
+.center-box button {
+  font-size: 1.5em;
+  padding: 15px 30px;
+  background: #0099ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+}
+
+/* Voor start/introscherm achtergronden */
+.screen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
