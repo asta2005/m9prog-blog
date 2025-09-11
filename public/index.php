@@ -27,7 +27,7 @@
   <section id="home" class="hero">
     <div class="hero-text">
       <h1>Hello,</h1>
-      <h2>This is <span class="highlight">Omar kahopuach</span>,</h2>
+      <h2>Dit is  <span class="highlight">Omar kahopuach</span>,</h2>
       <h2>Professional <span class="highlight2">Software Developer</span>.</h2>
       <div class="hero-buttons">
         <a href="#contact" class="btn">Contact Me</a>
