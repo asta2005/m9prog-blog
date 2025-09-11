@@ -1,15 +1,14 @@
 <?php
-$host = getenv('DB_HOST') ?: 'mariadb'; 
-$db   = getenv('DB_NAME') ?: 'omarkahouach';
-$user = getenv('DB_USERNAME') ?: 'omar';
-$pass = getenv('DB_PASSWORD') ?: 'khaled';
+// .env inladen
+$env = parse_ini_file(__DIR__ . '/.env');
 
-
-$dsn = "mysql:host=$host;port=3306;dbname=$db;charset=utf8mb4";
+// DB connectie
+$dsn = "mysql:host={$env['DB_HOST']};dbname={$env['DB_NAME']};charset=utf8mb4";
 
 try {
-    $pdo = new PDO($dsn, $user, $pass);
+    $pdo = new PDO($dsn, $env['DB_USERNAME'], $env['DB_PASSWORD']);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    die("Database verbinding mislukt: " . $e->getMessage());
+    die("DB connectie mislukt: " . $e->getMessage());
 }
+?>

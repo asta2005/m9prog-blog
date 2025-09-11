@@ -1,134 +1,134 @@
-/* Basis zwart tech theme */
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  background: #0d0d0d;
-  color: #eaeaea;
+  font-family: Arial, sans-serif;
+  background: #0a0a0f;
+  color: #f5f5f5;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background: #111;
-  border-bottom: 1px solid #222;
-  position: sticky;
+header {
+  position: fixed;
   top: 0;
+  width: 100%;
+  background: #111;
   z-index: 1000;
 }
 
-.navbar .logo {
-  font-size: 20px;
-  font-weight: bold;
-  color: #4a90e2;
-}
-
-.navbar ul {
-  list-style: none;
+nav ul {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 15px;
 }
 
-.navbar a {
-  color: #eaeaea;
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #f5f5f5;
   text-decoration: none;
-  padding: 8px 12px;
+  font-weight: bold;
   transition: color 0.3s;
 }
 
-.navbar a:hover,
-.navbar a.active {
-  color: #4a90e2;
+nav ul li a:hover {
+  color: #00ffcc;
 }
 
-.navbar .btn {
-  background: #4a90e2;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.navbar .btn:hover {
-  background: #357ab8;
-}
-
-/* Hero section */
+/* Hero */
 .hero {
-  text-align: center;
-  padding: 120px 20px;
-  background: linear-gradient(to right, #0d0d0d, #111);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px 10%;
+  background: linear-gradient(to bottom right, #0d0d0d, #3a3ad2);
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
+.hero-text {
+  max-width: 70%;
 }
 
-.hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
-  color: #aaa;
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
 }
 
-.btn-primary {
-  background: #4a90e2;
-  padding: 12px 20px;
-  border-radius: 6px;
-  color: #fff;
+.hero-text h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.highlight {
+  color: #ff4f8b;
+}
+
+.highlight2 {
+  color: #00ffcc;
+}
+
+.socials {
+  margin: 20px 0;
+}
+
+.socials a {
+  margin-right: 15px;
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #00ffcc;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-right: 10px;
+  border-radius: 25px;
+  background: #00ffcc;
+  color: #0a0a0f;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 16px;
+  transition: 0.3s;
 }
 
-.btn-primary:hover {
-  background: #357ab8;
+.btn:hover {
+  background: #00cc99;
 }
 
-/* Project preview */
-.preview {
-  padding: 60px 40px;
+.btn.alt {
+  background: #ff4f8b;
+  color: white;
 }
 
-.preview h2 {
-  text-align: center;
-  margin-bottom: 40px;
+.btn.alt:hover {
+  background: #cc3f70;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #1a1a1a;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-}
-
-/* Footer */
-footer {
-  text-align: center;
+/* Code Block */
+.hero-code {
+  background: #0e0e1a;
   padding: 20px;
-  background: #111;
-  border-top: 1px solid #222;
-  color: #666;
-  font-size: 14px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.2);
+  font-family: "Courier New", monospace;
+  max-width: 45%;
+  overflow-x: auto;
 }
+
+.hero-code pre {
+  margin: 0;
+  color: #f8f8f2;
+  font-size: 1rem;
+}
+
+.hero-code .keyword { color: #ff79c6; }
+.hero-code .string { color: #f1fa8c; }
+.hero-code .boolean { color: #50fa7b; }
