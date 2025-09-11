@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Omar Kahouach — Portfolio</title>
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/skills.css">
-  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/skills.css">
+  <link rel="stylesheet" href="/css/projects.css">
   
 </head>
 <body>
